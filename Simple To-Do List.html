@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <input type="text" placeholder="Enter" id="task">
+        <button onclick="addToArray()">Add</button>
+    <script>
+        let store = [];
+        function addToArray() {
+            let control = document.querySelector("#task").value
+                store.push(control) 
+                showTask();
+                document.querySelector("#task").value = ""; // for clear
+        }
+         function showTask() {
+                store.forEach((list, index) => {
+                    console.log(index + 1 + " "+ list)
+                }) 
+        }
+    </script>
+</body>
+</html>
