@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+        // basic for loop
+    for(let i = 1; i <= 10; i++) {
+        console.log(i)
+    }
+        //even and odd looping
+    for(let i = 1; i <= 20; i++) {
+        if(i % 2 === 0) {
+            console.log(`${i} is even number`)
+        } else{
+            console.log(`${i} is odd number`)
+        }
+    }
+    
+        // Arithmetic progression
+     function Arithmetic() {
+         let i = 1;
+         let store = 0;
+             while(i <= 10) {
+                store += i;
+                 i++;
+                }
+     console.log(`the summation of numbers ${store}`);
+
+        }
+    
+    function factorial() {  
+    let i = 1;
+    let store = 1;
+    while (i <= 8) {
+        store *= i
+        i++
+    }
+    console.log(`the factorial is ${store}`)
+    }
+    </script>
+</body>
+</html>
